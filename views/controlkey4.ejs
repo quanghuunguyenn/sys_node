@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Key Word</title>
+		<link rel="stylesheet" type="text/css" href="sb-admin.css">
+		<style type="text/css">
+			body {
+				background-color: #008080;
+				margin: 0 auto;
+				width: 1000px;
+				color:white;
+			}
+			h1{
+				text-align: center;
+				margin: 70px 0;
+			}
+			.col {
+				width: 27%;
+				float: left;
+				margin-left: 45px;
+			}
+			#google {
+				margin: 100px 300px;
+			}
+			a {
+				color: white!important;
+			}
+		</style>
+		
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<div>
+			<h1>Xác định từ khóa có nghĩa</h1>
+			<form>
+				<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Từ khóa</th>
+				      <th scope="col">Thao tác</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	<% data.rows.forEach(function(d){ %>
+				    <tr>
+				      <th scope="row">#</th>
+				      <td style="color: white"><%= d.val %></td>
+				      <td>
+				      	<a onclick="return confirm('Khi xác nhận từ khóa sẽ bị xóa!')"
+				      	 href="/controlkey4/<%= d.val %>" id="btn">Xác định vô nghĩa
+				      	</a></td>
+				    </tr>
+				    <% }) %>
+				  </tbody>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

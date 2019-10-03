@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="vi">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>Trang phân tích thông tin</title>
+<!-- CSS Files-->
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="skins/blue.css">
+<!-- skin color -->
+<link rel="stylesheet" href="responsive.css">
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<div id="panel">
+	<div class="row">
+		<div class="twelve columns">
+			<img src="http://www.wowthemes.net/demo/studiofrancesca/images/info.png" class="pics" alt="info">
+			<div class="infotext">
+				--- CEO: Cảm ơn đã đến với website của chúng tôi!---<br>
+				<a href="/admin" target="blank">Đăng nhập</a>
+			</div>
+		</div>
+	</div>
+</div>
+<p class="slide">
+	<a href="#" class="btn-slide"></a>
+</p>
+<!-- HEADER
+================================================== -->
+<div class="row">
+	<div class="headerlogo four columns">
+		<div class="logo">
+			<a href="/trangnhat">
+			<h4>Trang nhất</h4>
+			</a>
+		</div>
+	</div>
+	<div class="headermenu eight columns noleftmarg">
+		<nav id="nav-wrap">
+		<ul id="main-menu" class="nav-bar sf-menu">
+			<li class="current">
+				<a href="/trangnhat">Trang nhất</a>
+			</li>
+			<li>
+				<a href="/xahoi">Xã hội</a>
+			</li>
+			<li>
+				<a href="/phapluat">Pháp luật</a>
+			</li>
+			<li>
+				<a href="/giaoduc">Giáo dục</a>
+			</li>
+			<li>
+				<a href="/contact">Liên hệ</a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+</div>
+<div class="clear">
+</div>
+<!-- SLIDER 
+
+================================================== -->
+<div id="ei-slider" class="ei-slider">
+	<ul class="ei-slider-large">
+		<li>
+			<a href="/gddetail/<%= gd.rows[0].id %>" target="blank">
+				<img src="<%= gd.rows[0].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Giáo dục</h2>
+				<h3><%= gd.rows[0].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/postdetail/<%= pl.rows[0].id %>" target="blank">
+				<img src="<%= pl.rows[0].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Pháp luật</h2>
+				<h3><%= pl.rows[0].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/xhdetail/<%= xh.rows[0].id %>" target="blank">
+				<img src="<%= xh.rows[0].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Xã hội</h2>
+				<h3><%= xh.rows[0].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/gddetail/<%= gd.rows[1].id %>" target="blank">
+				<img src="<%= gd.rows[1].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Giáo dục</h2>
+				<h3><%= gd.rows[1].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/xhdetail/<%= xh.rows[1].id %>" target="blank">
+				<img src="<%= xh.rows[1].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Xã hội</h2>
+				<h3><%= xh.rows[1].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/postdetail/<%= pl.rows[1].id %>" target="blank">
+				<img src="<%= pl.rows[1].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Pháp luật</h2>
+				<h3><%= pl.rows[1].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/gddetail/<%= gd.rows[2].id %>" target="blank">
+				<img src="<%= gd.rows[2].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Giáo dục</h2>
+				<h3><%= gd.rows[2].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/xhdetail/<%= xh.rows[2].id %>" target="blank">
+				<img src="<%= xh.rows[2].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Xã hội</h2>
+				<h3><%= xh.rows[2].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/gddetail/<%= gd.rows[3].id %>" target="blank">
+				<img src="<%= gd.rows[3].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Giáo dục</h2>
+				<h3><%= gd.rows[3].vatit %></h3>
+			</div>
+		</li>
+		<li>
+			<a href="/postdetail/<%= pl.rows[2].id %>" target="blank">
+				<img src="<%= pl.rows[2].imglink %>" alt="image01" class="responsiveslide">
+			</a>
+			<div class="ei-title">
+				<h2>Pháp luật</h2>
+				<h3><%= pl.rows[2].vatit %></h3>
+			</div>
+		</li>
+	</ul>
+	<!-- slider-thumbs -->
+	<ul class="ei-slider-thumbs">
+		<li class="ei-slider-element">Current</li>
+		<li><a href="#">Slide 1</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb01"/></li>
+		<li><a href="#">Slide 2</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb02"/></li>
+		<li><a href="#">Slide 3</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb03"/></li>
+		<li><a href="#">Slide 4</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb04"/></li>
+		<li><a href="#">Slide 5</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb05"/></li>
+		<li><a href="#">Slide 6</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb06"/></li>
+		<li><a href="#">Slide 7</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb07"/></li>
+		<li><a href="#">Slide 8</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb08"/></li>
+		<li><a href="#">Slide 9</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb09"/></li>
+		<li><a href="#">Slide 10</a><img src="http://placehold.it/150x59/444" class="slideshowthumb" alt="thumb10"/></li>
+	</ul>
+</div>
+<div class="minipause">
+</div>
+<!-- SUBHEADER
+================================================== -->
+<div id="subheader">
+	<div class="row">
+		<div class="twelve columns">
+			<p class="text-center">
+				"Thông tin" là lịch sử phát triển của nền văn minh!
+			</p>
+		</div>
+	</div>
+</div>
+<!-- ANIMATED COLUMNS 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<ul class="ca-menu">
+			<li>
+			<a href="/api" target="blank">
+			<span class="ca-icon"><i class="fa fa-heart"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">API<br/> JSON DATA</h2>
+				<h3 class="ca-sub">Hoàn toàn miễn phi</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/keyword" target="blank">
+			<span class="ca-icon"><i class="fa fa-bullhorn"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">Xu hướng<br/> Thông tin</h2>
+				<h3 class="ca-sub">Phân tích từ khóa</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/404">
+			<span class="ca-icon"><i class="fa fa-user"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">New Function <br/> Updating</h2>
+				<h3 class="ca-sub">Comming Soon</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/404">
+			<span class="ca-icon"><i class="fa fa-camera"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">New Function <br/> Updating</h2>
+				<h3 class="ca-sub">Comming Soon</h3>
+			</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- CONTENT================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<div class="centersectiontitle">
+			<h4>Chúng tôi đang làm gì ?</h4>
+		</div>
+	</div>
+	<div class="four columns">
+		<h5>Thu thập thông tin</h5>
+		<p>
+			Chúng tôi thu thập các bài viết trên các trang mạng uy tín hàng đầu tại Việt Nam.
+			<br>Các thông tin chính thống được chọn lọc và phân loại trước khi đăng tải.
+		</p>
+	</div>
+	<div class="four columns">
+		<h5>Hệ thống tự động</h5>
+		<p>
+			Ứng dụng điện toán đám mây và các công nghệ thu thập dữ liệu tự động từ các nguồn
+			 thông tin trên Internet.
+			Dữ liệu được cập nhật tự động theo thời gian thực.
+		</p>
+	</div>
+	<div class="four columns">
+		<h5>Phân tích xu hướng</h5>
+		<p>
+			Sử dụng các thuật toán đón bắt xu hướng thông tin được quan tâm, các đối tượng thông tin xuất hiện nhiều nhất.
+			<br>Làm sạch và đưa ra kết quả xu hướng.
+		</p>
+	</div>
+</div>
+<div class="hr">
+</div>
+<!-- TESTIMONIALS 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<div id="testimonials">
+			<blockquote>
+				<p>
+					 "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection the callback is fired, but if there is no work to be done, Node will sleep." <cite>CEO - QUANG NGUYEN</cite>
+				</p>
+			</blockquote>
+			<blockquote>
+				<p>
+					 "This is in contrast to today's more common concurrency model where OS threads are employed. Thread-based networking is relatively inefficient and very difficult to use. Furthermore, users of Node are free from worries of dead-locking the process, since there are no locks. Almost no function in Node directly performs I/O, so the process never blocks. Because nothing blocks, scalable systems." <cite>CEO - QUANG NGUYEN</cite>
+				</p>
+			</blockquote>
+			<blockquote>
+				<p>
+					 "Just because Node is designed without threads, doesn't mean you cannot take advantage of multiple cores in your environment. Child processes can be spawned by using our child_process.fork() API, and are designed to be easy to communicate with. Built upon that same interface is the cluster module, which allows you to share sockets between processes to enable load balancing over your cores." <cite>CEO - QUANG NGUYEN</cite>
+				</p>
+			</blockquote>
+		</div>
+		<!--end testimonials-->
+	</div>
+</div>
+
+<!-- FOOOTER 
+================================================== -->
+<div id="footer">
+	<footer class="row">
+	<p class="back-top floatright">
+		<a href="#top"><span></span></a>
+	</p>
+	<div class="four columns">
+		<h1>CHÚNG TÔI</h1>
+		Luôn tìm kiếm thông tin cho bạn!
+	</div>
+	<div class="four columns">
+		<h1>MẠNG XÃ HỘI</h1>
+		<a class="social facebook" href="#"></a>
+		<a class="social twitter" href="#"></a>
+		<a class="social deviantart" href="#"></a>
+		<a class="social flickr" href="#"></a>
+		<a class="social dribbble" href="#"></a>
+	</div>
+	<div class="four columns">
+		<h1 class="newsmargin">NHẬN TIN</h1>
+		<div class="row collapse newsletter floatright">
+			<div class="ten mobile-three columns">
+				<input type="text" class="nomargin" placeholder="Địa chỉ Email của bạn...">
+			</div>
+			<div class="two mobile-one columns">
+				<a href="#" class="postfix button expand">GỬI</a>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<div class="copyright">
+	<div class="row">
+		<div class="six columns">
+			 &copy;<span class="small"> Copyright Q-talk network</span>
+		</div>
+		<div class="six columns">
+			<span class="small floatright">Design by <a target="_blank" href="http://qtalkplus.freevnn.com">Q-talk Library</a> </span>
+		</div>
+	</div>
+</div>
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="foundation.min.js"></script>   
+<script src="jquery.easing.1.3.js"></script>
+<script src="elasticslideshow.js"></script>
+<script src="jquery.carouFredSel-6.0.5-packed.js"></script>
+<script src="jquery.cycle.js"></script>
+<script src="app.js"></script>
+<script src="modernizr.foundation.js"></script>
+<script src="slidepanel.js"></script>
+<script src="scrolltotop.js"></script>
+<script src="hoverIntent.js"></script>
+<script src="superfish.js"></script>
+<script src="responsivemenu.js"></script>
+</body>
+</html>

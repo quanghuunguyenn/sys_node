@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Chi tiết bài viết</title>
+	<style type="text/css">
+		body {
+			padding: 50px;
+		}
+		a {
+			text-decoration: none;
+		}
+		#time {
+			width: 30%;
+			float: right;
+		}
+		#back {
+			width: 40%;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="time"> <%- time %> </div>
+	<div id="clearb">
+		<h1>Bài viết:<%- title %></h1>
+
+		<p><%- con %></p>
+		
+		<a href=" <%- back %>">Về trang mục tin</a> <p></p>
+		<a href="/trangnhat">Trang chủ</a>
+	</div>
+</body>
+</html>
+
+

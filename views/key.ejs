@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Key Word</title>
+
+		<style type="text/css">
+			body {
+				background-color: #008080;
+				margin: 0 auto;
+				width: 1000px;
+			}
+			h1{
+				text-align: center;
+				margin: 70px 0;
+			}
+			.col {
+				width: 27%;
+				float: left;
+				margin-left: 45px;
+			}
+			.level {
+				margin-left: 45px;
+			}
+			
+			.level > h3, input{
+				display: inline;
+			}
+
+			#google {
+				margin: 0 auto;
+				width: 500px;
+				text-align: center;
+			}
+		</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="config_layout.js"></script>
+	</head>
+	<body>
+		<div>
+			<h1>Thống kê - Phân tích tần suất từ khóa <br> Kết quả phân tích dựa trên dữ liệu thu thập được từ ngày 28/5/2019</h1>
+
+			<div class="level-search">
+				<div class="level">
+					<h3>Lựa chọn mức độ tần suất: </h3>
+					<input class="lv" id="3lv" type="button" value="3" style="display: none;">
+					<input class="lv" id="5lv" type="button" value="5">
+					<input class="lv" id="7lv" type="button" value="7">
+					<input class="lv" id="9lv" type="button" value="9">
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="search" id="google" style="display: none">
+					<FORM method=GET action="http://www.google.com/search">
+						<input id="searchval" type=text name=q size=50 maxlength=300 value="">
+						<input type=submit name=btng value="Tìm kiếm">
+					</FORM>
+				</div>
+			</div>
+			
+			<br>
+			<div class="3lv">
+				
+				<div class="col">
+				<h3>Các từ khóa (Cụm 2) xuất hiện trên <span class="num">3</span> lần!</h3>
+				<% key12.rows.forEach(function(key2){ %>
+					<input class="btnkey" type="button" name="" value="<%= key2.val %>" />
+				<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 3) xuất hiện trên <span class="num">3</span> lần!</h3>
+					<% key13.rows.forEach(function(keytripb){ %>
+						<input class="btnkey" type="button" name="" value="<%= keytripb.val %>" />
+					<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 4) xuất hiện trên <span class="num">3</span> lần!</h3>
+					<% key14.rows.forEach(function(keyquar){ %>
+						<input class="btnkey" type="button" name="" value="<%= keyquar.val %>" />
+					<% }); %>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="5lv" style="display: none;">
+				<div class="col">
+				<h3>Các từ khóa (Cụm 2) xuất hiện trên <span class="num">...</span> lần!</h3>
+				<% key22.rows.forEach(function(key2){ %>
+					<input class="btnkey" type="button" name="" value="<%= key2.val %>" />
+				<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 3) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key23.rows.forEach(function(keytripb){ %>
+						<input class="btnkey" type="button" name="" value="<%= keytripb.val %>" />
+					<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 4) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key24.rows.forEach(function(keyquar){ %>
+						<input class="btnkey" type="button" name="" value="<%= keyquar.val %>" />
+					<% }); %>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="7lv" style="display: none;">
+				<div class="col">
+				<h3>Các từ khóa (Cụm 2) xuất hiện trên <span class="num">...</span> lần!</h3>
+				<% key32.rows.forEach(function(key2){ %>
+					<input class="btnkey" type="button" name="" value="<%= key2.val %>" />
+				<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 3) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key33.rows.forEach(function(keytripb){ %>
+						<input class="btnkey" type="button" name="" value="<%= keytripb.val %>" />
+					<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 4) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key34.rows.forEach(function(keyquar){ %>
+						<input class="btnkey" type="button" name="" value="<%= keyquar.val %>" />
+					<% }); %>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="9lv" style="display: none;">
+				<div class="col">
+				<h3>Các từ khóa (Cụm 2) xuất hiện trên <span class="num">...</span> lần!</h3>
+				<% key42.rows.forEach(function(key2){ %>
+					<input class="btnkey" type="button" name="" value="<%= key2.val %>" />
+				<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 3) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key43.rows.forEach(function(keytripb){ %>
+						<input class="btnkey" type="button" name="" value="<%= keytripb.val %>" />
+					<% }); %>
+				</div>
+				<div class="col">
+					<h3>Các từ khóa (Cụm 4) xuất hiện trên <span class="num">...</span> lần!</h3>
+					<% key44.rows.forEach(function(keyquar){ %>
+						<input class="btnkey" type="button" name="" value="<%= keyquar.val %>" />
+					<% }); %>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+
+			
+		</div>
+	</body>
+</html>

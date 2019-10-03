@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="vi">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>Thông tin giáo dục</title>
+<!-- CSS Files-->
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="skins/blue.css">
+<!-- skin color -->
+<link rel="stylesheet" href="responsive.css">
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<div id="panel">
+	<div class="row">
+		<div class="twelve columns">
+			<img src="http://www.wowthemes.net/demo/studiofrancesca/images/info.png" class="pics" alt="info">
+			<div class="infotext">
+				--- CEO: Cảm ơn đã đến với website của chúng tôi!---<br>
+				<a href="/admin">Đăng nhập</a>
+			</div>
+		</div>
+	</div>
+</div>
+<p class="slide">
+	<a href="#" class="btn-slide"></a>
+</p>
+<!-- HEADER
+================================================== -->
+<div class="row">
+	<div class="headerlogo four columns">
+		<div class="logo">
+			<a href="/giaoduc">
+			<h4>Giáo dục</h4>
+			</a>
+		</div>
+	</div>
+	<div class="headermenu eight columns noleftmarg">
+		<nav id="nav-wrap">
+		<ul id="main-menu" class="nav-bar sf-menu">
+			<li class="current">
+				<a href="/trangnhat">Trang nhất</a>
+			</li>
+			<li>
+				<a href="/xahoi">Xã hội</a>
+			</li>
+			<li>
+				<a href="/phapluat">Pháp luật</a>
+			</li>
+			<li>
+				<a href="/contact">Liên hệ</a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+</div>
+<div class="clear">
+</div>
+
+<div class="minipause">
+</div>
+
+<!-- ANIMATED COLUMNS 
+================================================== -->
+<div class="row">
+	<div class="twelve columns">
+		<ul class="ca-menu">
+			<li>
+			<a href="/api" target="blank">
+			<span class="ca-icon"><i class="fa fa-heart"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">API<br/> JSON DATA</h2>
+				<h3 class="ca-sub">Hoàn toàn miễn phi</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/keyword" target="blank">
+			<span class="ca-icon"><i class="fa fa-bullhorn"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">Xu hướng<br/> Thông tin</h2>
+				<h3 class="ca-sub">Phân tích từ khóa</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/404">
+			<span class="ca-icon"><i class="fa fa-user"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">New Function <br/> Updating</h2>
+				<h3 class="ca-sub">Comming Soon</h3>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a href="/404">
+			<span class="ca-icon"><i class="fa fa-camera"></i></span>
+			<div class="ca-content">
+				<h2 class="ca-main">New Function <br/> Updating</h2>
+				<h3 class="ca-sub">Comming Soon</h3>
+			</div>
+			</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- CONTENT 
+================================================== -->
+<div class="row">
+	<div class="leftContent">
+		<div class="centersectiontitle"><h5>Tin nổi bật</h5></div>
+		<% data.rows.forEach(function(post){ %>
+		<div class="postColums">
+			<a href="/gddetail/<%=  post.id %>"><h5 class="title"><%= post.vatit %></h5></a>
+			<a href="/gddetail/<%=  post.id %>"><img src="<%= post.imglink %>"> </a>
+			<p>
+				<a href="/gddetail/<%=  post.id %>" class="readmore">Đọc thêm</a>
+			</p>
+			<hr>
+		</div>
+		<% }); %>
+	</div>
+
+	<div class="rightContent">
+		<div class="centersectiontitle"><h5>Tin khác</h5></div>
+		<% data2.rows.forEach(function(post){ %>
+			<a href="/gddetail/<%=  post.id %>"><h6 class="title"><%= post.vatit %></h6></a>
+		<% }); %>
+	</div>
+</div>
+<div class="hr">
+</div>
+
+
+<!-- FOOOTER 
+================================================== -->
+<div id="footer">
+	<footer class="row">
+	<p class="back-top floatright">
+		<a href="#top"><span></span></a>
+	</p>
+	<div class="four columns">
+		<h1>CHÚNG TÔI</h1>
+		Luôn tìm kiếm thông tin cho bạn!
+	</div>
+	<div class="four columns">
+		<h1>MẠNG XÃ HỘI</h1>
+		<a class="social facebook" href="#"></a>
+		<a class="social twitter" href="#"></a>
+		<a class="social deviantart" href="#"></a>
+		<a class="social flickr" href="#"></a>
+		<a class="social dribbble" href="#"></a>
+	</div>
+	<div class="four columns">
+		<h1 class="newsmargin">NHẬN TIN</h1>
+		<div class="row collapse newsletter floatright">
+			<div class="ten mobile-three columns">
+				<input type="text" class="nomargin" placeholder="Địa chỉ Email của bạn...">
+			</div>
+			<div class="two mobile-one columns">
+				<a href="#" class="postfix button expand">GỬI</a>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<div class="copyright">
+	<div class="row">
+		<div class="six columns">
+			 &copy;<span class="small"> Copyright Q-talk network</span>
+		</div>
+		<div class="six columns">
+			<span class="small floatright">Design by <a target="_blank" href="http://qtalkplus.freevnn.com">Q-talk Library</a> </span>
+		</div>
+	</div>
+</div>
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="foundation.min.js"></script>   
+<script src="jquery.easing.1.3.js"></script>
+<script src="elasticslideshow.js"></script>
+<script src="jquery.carouFredSel-6.0.5-packed.js"></script>
+<script src="jquery.cycle.js"></script>
+<script src="app.js"></script>
+<script src="modernizr.foundation.js"></script>
+<script src="slidepanel.js"></script>
+<script src="scrolltotop.js"></script>
+<script src="hoverIntent.js"></script>
+<script src="superfish.js"></script>
+<script src="responsivemenu.js"></script>
+</body>
+</html>
