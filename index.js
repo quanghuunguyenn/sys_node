@@ -1,4 +1,4 @@
-
+﻿
 var express = require("express");
 var app = express();
 var pg = require('pg');
@@ -42,7 +42,7 @@ function sendEmail(){
 			service: 'gmail',
 			auth: {
 				user: 'newstar25692@gmail.com',
-				pass: 'tramy31392'
+				pass: 'abcxyz'
 			}
 		});
 		var mailOptions = {
